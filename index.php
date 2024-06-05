@@ -5,7 +5,7 @@
 require_once './commons/env.php';
 require_once './commons/helpers.php';
 require_once './commons/connect-db.php';
-require_once './commons/crud_db.php';
+require_once './commons/model.php';
 require_file(PATH_CONTROLLER);  // ham nay de require tat car file trong controller
 require_file(PATH_MODELS);
 //điều hướng
