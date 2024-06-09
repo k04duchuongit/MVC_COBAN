@@ -15,7 +15,14 @@ require_file(PATH_MODELS_ADMIN);
 $act = $_GET['act'] ?? '/';
 match ($act) {
     '/' => dashboard(),
-    'user-detail' => userDetail($_GET['id']),
+
+
+    //CRUD user
+    'users' => userListAll(),
+    'user-detail' => userShowOne($_GET['id']),
+    'user-create' => userCreate(),
+    'user-update' => userUpdate($_GET['id']),
+    'user-delete' => userDelete($_GET['id']),
 };
 
 

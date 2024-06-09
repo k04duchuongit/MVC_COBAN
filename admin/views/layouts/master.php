@@ -15,7 +15,9 @@
 
     <!-- Custom styles for this template-->
     <link href="<?= BASE_URL ?>/assets/admin/css/sb-admin-2.min.css" rel="stylesheet">
-
+    <?php if (isset($style) && $style) {
+        require_once PATH_VIEW_ADMIN  . $style . '.php';
+    } ?>
 </head>
 
 <body id="page-top">
@@ -72,10 +74,13 @@
     <!-- Custom scripts for all pages-->
     <script src="<?= BASE_URL ?>/assets/admin/js/sb-admin-2.min.js"></script>
 
+    <?php if (isset($script) && $script) {
+        require_once PATH_VIEW_ADMIN . 'scripts/' . $script . '.php';
+    } ?>
 
-    <?php if(isset($scripts) && $scripts) {
-        require_once PATH_VIEW_ADMIN .'scripts/'. $scripts . '.php';
-    }?>
+    <?php if (isset($script2) && $script2) {
+        require_once PATH_VIEW_ADMIN  . $script2 . '.php';
+    } ?>
 </body>
 
 </html>
