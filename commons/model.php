@@ -8,7 +8,7 @@ if (!function_exists('get_str_keys')) {     // chuyển đổi key thành dạng
         return implode(',', $keys);      //được sử dụng để chuyển đổi mảng các khóa thành một chuỗi duy nhất, các phần tử trong chuỗi được ngăn cách bằng dấu phẩy (,).
     }
 }
-if (!function_exists('get_virtual_params')) {
+if (!function_exists('get_virtual_params')) {    // chuyển đổi key thành dạng  key1:key2:key3
     function get_virtual_params($data)
     {
         $keys = array_keys($data);
