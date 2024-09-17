@@ -1,7 +1,7 @@
 <?php
 //crud ->create/read(dánhachs/chi tiết)/Update/Delete
 
-if (!function_exists('get_str_keys')) {
+if (!function_exists('get_str_keys')) {     // chuyển đổi key thành dạng key1,key2,key3...
     function get_str_keys($data)
     {
         $keys = array_keys($data);            // trả về một mảng chứa tất cả các khóa từ mảng được cung cấp
